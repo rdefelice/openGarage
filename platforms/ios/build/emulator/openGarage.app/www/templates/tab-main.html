@@ -1,0 +1,12 @@
+<ion-view view-title="Garages">
+  <ion-content class="padding">
+
+    <p ng-model="garageStatus.dist">
+      Garage Status: {{ garageStatus.verbose_status }}
+    </p>
+
+	<button id="dash-button3" class=" button button-positive  button-block " ng-click=updateStatus()>Reload Status</button>
+	<button id="dash-button2" class=" button button-positive  button-block " ng-click=openClose()>Open/Close</button>
+    
+  </ion-content>
+</ion-view>

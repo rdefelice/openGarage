@@ -1,0 +1,14 @@
+<ion-view view-title="Settings">
+  <ion-content>
+	<label class="item item-input">
+          <span class="input-label">OpenGarage Hostname/IP:Port</span>
+          <input type="text" ng-model="settings.ip" ng-change="saveSettings()">
+	</label>
+	<label class="item item-input">
+          <span class="input-label">Password  </span>
+          <input type="password" ng-model="settings.pass" ng-change="saveSettings()">
+	</label>
+	<button id="button-load-settings" class=" button button-positive  button-block " ng-click="loadSettings()">Load Settings</button>
+	<button id="button-erase-settings" class=" button button-positive  button-block " ng-click="clearSettings()">Clear Settings</button>
+  </ion-content>
+</ion-view>

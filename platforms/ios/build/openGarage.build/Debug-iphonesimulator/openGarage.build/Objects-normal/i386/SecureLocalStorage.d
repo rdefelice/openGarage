@@ -1,0 +1,25 @@
+dependencies: \
+  /Users/ryan/mycode/openGarage/platforms/ios/openGarage/Plugins/nl-afas-cordova-plugin-securelocalstorage/SecureLocalStorage.m \
+  /Users/ryan/mycode/openGarage/platforms/ios/openGarage/Plugins/nl-afas-cordova-plugin-securelocalstorage/SecureLocalStorage.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/build/emulator/include/Cordova/CDV.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/build/emulator/include/Cordova/CDVAvailabilityDeprecated.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/build/emulator/include/Cordova/CDVViewController.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/build/emulator/include/Cordova/CDVDebug.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/build/emulator/include/Cordova/CDVTimer.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/build/emulator/include/Cordova/CDVJSON.h \
+  /Users/ryan/mycode/openGarage/platforms/ios/openGarage/Plugins/nl-afas-cordova-plugin-securelocalstorage/KeychainItemWrapper.h
