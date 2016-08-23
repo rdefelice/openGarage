@@ -1,5 +1,5 @@
 angular.module('opengarage.controllers', [])
-.controller('MainCtrl', function($scope, $rootScope, $stateParams, garageService, $http) {
+.controller('MainCtrl', function($scope, $rootScope, $stateParams, garageService, $http, SecureLocalStorage) {
 
     $rootScope.settings = {pass: "", ip: ""};
     $scope.updateStatus = function () {
@@ -18,10 +18,10 @@ angular.module('opengarage.controllers', [])
     };
 
     $scope.loadSettings = function() {
-      cordova.plugins.SecureLocalStorage.getItem("ip").then(function (ip){
+      SecureLocalStorage.getItem("ip").then(function (ip){
 	  $rootScope.settings.ip = ip;
       })
-      cordova.plugins.SecureLocalStorage.getItem("pass").then(function (pass){
+      SecureLocalStorage.getItem("pass").then(function (pass){
 	  $rootScope.settings.pass = pass;
       })
     };
@@ -40,30 +40,30 @@ angular.module('opengarage.controllers', [])
     $scope.updateStatus();
 })
 
-.controller('settingsCtrl', function($scope, $rootScope, $stateParams, garageService, $http) {
+.controller('settingsCtrl', function($scope, $rootScope, $stateParams, garageService, $http, SecureLocalStorage) {
 
     $rootScope.settings = {pass: "", ip: ""};
 
     $scope.saveSettings = function () {
 	  $rootScope.settings.ip = $scope.settings.ip;
 	  $rootScope.settings.pass = $scope.settings.pass;
-	  cordova.plugins.SecureLocalStorage.setItem("ip" , $scope.settings.ip);
-	  cordova.plugins.SecureLocalStorage.setItem("pass" , $scope.settings.pass);
+	  SecureLocalStorage.setItem("ip" , $scope.settings.ip);
+	  SecureLocalStorage.setItem("pass" , $scope.settings.pass);
     };
 
     $scope.clearSettings = function () {
 	$rootScope.settings.ip = "";
 	$rootScope.settings.pass = "";
-	cordova.plugins.SecureLocalStorage.removeItem("ip");
-	cordova.plugins.SecureLocalStorage.removeItem("pass");
+	SecureLocalStorage.removeItem("ip");
+	SecureLocalStorage.removeItem("pass");
     };
 
 
     $scope.loadSettings = function() {
-      cordova.plugins.SecureLocalStorage.getItem("ip").then(function (ip){
+      SecureLocalStorage.getItem("ip").then(function (ip){
 	  $rootScope.settings.ip = ip;
       })
-      cordova.plugins.SecureLocalStorage.getItem("pass").then(function (pass){
+      SecureLocalStorage.getItem("pass").then(function (pass){
 	  $rootScope.settings.pass = pass;
       })
     };
